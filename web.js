@@ -6,7 +6,7 @@ var fs=require('fs');
 app.get('/', function(request, response) {
   
   var index=fs.readFileSync('index.html');
-  var string=indexHtml.toString('utf-8');
+  var string=index.toString('utf-8');
   response.send(string);
 });
 
